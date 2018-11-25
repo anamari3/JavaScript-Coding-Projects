@@ -7,16 +7,21 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/pizzaordering.css">
 
     <title>Capitol City Pizza</title>
   </head>
   <body>
-  <div class="container">
-    <h1>Capitol City Pizza</h1>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Capitol City Pizza</h1>
+          </div>
+        </div>
 
     <!--Pizza Size-->
+  <div class="container">
     <div class="btn-group btn-group-toggle">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-outline-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Size
       </button>
       <ul class="dropdown-menu">
@@ -42,7 +47,7 @@
 
     <!--Crust-->
     <div class="btn-group btn-group-toggle">
-        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary btn-lg dropdown-toggle middlebtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Crust
         </button>
         <ul class="dropdown-menu">
@@ -72,7 +77,7 @@
 
     <!--Sauce-->
     <div class="btn-group btn-group-toggle">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-outline-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Sauce
       </button>
       <ul class="dropdown-menu">
@@ -95,10 +100,12 @@
         </ul>
       </div>
     <!--/Sauce-->
+  </div>
 
     <!--Cheese-->
+  <div class="container"> 
     <div class="btn-group btn-group-toggle">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-outline-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Cheese
       </button>
       <ul class="dropdown-menu">
@@ -120,7 +127,7 @@
 
     <!--Meats-->
     <div class="btn-group btn-group-toggle">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-outline-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Meats
       </button>
       <ul class="dropdown-menu">
@@ -136,7 +143,7 @@
 
     <!--Veggies-->
     <div class="btn-group btn-group-toggle">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-outline-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Veggies
       </button>
       <ul class="dropdown-menu">
@@ -150,10 +157,11 @@
         <li data-value="option6" tabIndex="-1"><input class="veggies" type="checkbox" name="veggies" value="Jalapeno"/>&nbsp;Jalapeno</li>
       </ul>
     </div>
+  </div>
     <!--/Veggies-->
   </div>
   <div class="container">
-    <button type="button" onclick="getReceipt()" class="btn btn-secondary btn-lg btn-block">Place Order</button>
+    <button type="button" onclick="getReceipt()" class="btn btn-outline-secondary btn-lg btn-block">Place Order</button>
   </div>
 
   <div id="cart">
