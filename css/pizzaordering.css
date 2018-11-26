@@ -36,9 +36,14 @@ h1 {
 
 #cart {
     width: 505px;
-    height: 505px;
+    height: 490px;
+    background-color: #fff;
+    background-image: url(../img/pizzatoss2.png);
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    position: relative;
+    background-position-y: 100%;
     margin: 80px auto;
-    background: #fff;
     box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
     border-radius: 10px;
     
